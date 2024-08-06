@@ -55,7 +55,7 @@ for k in np.arange(nlay):
 
 # ===== 1.3 Setting hydraulic and solute transport properties
 # Porosity [-]
-ngravel = 0.28  # Porosity of gravel
+ngravel = 0.28  # Porosity of gravel (specific yield)
 prsity = np.ones((nlay, nrow, ncol), dtype=float) # Establish variable
 prsity[0,:,:]=ngravel   # Set layer 0 porosity to ngravel
 prsity[1,:,:]=ngravel # Set layer 1 porosity to ngravel
